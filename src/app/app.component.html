@@ -1,0 +1,11 @@
+<button (click)="test()">test</button>
+
+<button (click)="setData()">set data</button>
+
+<button (click)="insert()">insert</button>
+
+<div>
+    <p *ngFor="let item of obsDatas | async">
+        {{item|json}}
+    </p>
+</div>
