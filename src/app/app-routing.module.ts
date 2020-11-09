@@ -9,6 +9,10 @@ const routes: Routes = [
     {
         path: 'accordion',
         loadChildren: () => import('./pages/test-accordion/test-accordion.module').then(m => m.TestAccordionModule)
+    },
+    {
+        path: 'v-timeline',
+        loadChildren: () => import('./pages/vertical-timeline/vertical-timeline.module').then(m => m.VerticalTimelineModule)
     }
 ];
 

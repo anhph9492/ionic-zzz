@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 
 @Component({
     selector: 'app-accordion',
-    template: '<ion-list><ng-content></ng-content></ion-list>',
+    template: '<ion-card><ion-list><ng-content></ng-content></ion-list></ion-card>',
     styleUrls: ['./accordion.component.scss']
 })
 
