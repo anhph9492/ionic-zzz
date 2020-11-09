@@ -2,15 +2,14 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {IonicModule} from '@ionic/angular';
-
 import {Routes, RouterModule} from '@angular/router';
-
-import {LoginComponent} from './login.component';
+import {TestAccordionComponent} from './test-accordion.component';
+import {AccordionModule} from '../../component/accordion/accordion.module';
 
 const routes: Routes = [
     {
         path: '',
-        component: LoginComponent
+        component: TestAccordionComponent
     }
 ];
 
@@ -19,14 +18,14 @@ const routes: Routes = [
         CommonModule,
         FormsModule,
         IonicModule,
-        RouterModule.forChild(routes)
+        RouterModule.forChild(routes),
+        AccordionModule
     ],
     declarations: [
-        LoginComponent
+        TestAccordionComponent
     ],
     exports: []
 })
-export class LoginModule {
-    public LoginModule() {
-    }
+export class TestAccordionModule {
+    public TestAccordionModule(){}
 }
