@@ -4,6 +4,7 @@
 
 
 .timeline{
+  font-size: 13px;
   max-width: 1200px;
   position: relative;
   margin: 0 auto;
@@ -11,7 +12,7 @@
   /* Container around content */
   .container {
     position: relative;
-    padding: 0.3rem 2rem 0rem 2rem;
+    padding: 0.3rem 1rem 0rem 1rem;
     width: 50%;
 
     .content {
@@ -22,7 +23,6 @@
 
       p{
         margin: 0.5rem 0.5rem;
-        font-size: 15px;
       }
       p:first-child{
         margin-bottom: 1rem;
@@ -66,9 +66,9 @@
   position: absolute;
   top: 1.2rem;
   bottom: 0;
-  width: 6px;
+  width: 4px;
   left: 50%;
-  margin-left: -3px;
+  margin-left: -2px;
 }
 
 @media screen and (max-width: 600px) {
